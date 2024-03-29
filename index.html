@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#d20000",
+                        secondary: '#8c59e8'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <title>THANH VÂN LONG</title>
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <!-- Start Header -->
+        <div
+            class="header flex md:flex-row flex-col justify-between relative items-center px-2 py-2 md:px-20 md:py-10 ">
+            <div class="header-logo"><img src="/image/logo.png" width="100px"></div>
+            <div class="header-name text-center">
+                <p class="text-secondary max-md:mt-2 font-semibold text-xl tracking-widest">CÔNG TY TNHH SX - TM - DV
+                </p>
+                <p class="text-primary font-bold text-3xl">THANH VÂN LONG</p>
+            </div>
+            <div class="max-md:mt-2 header-contact flex flex-row">
+                <img class="mr-2 hidden md:block" src="image/icon/icons8-phone-64.png" alt="" width="40px"
+                    height="40px" />
+                <div>
+                    <p class="hidden md:block text-sm text-gray-800">Hotline liên hệ</p>
+                    <p class="text-primary font-bold tetx-xl">0989 969 520 - 0974 655 724</p>
+                </div>
+            </div>
+            <div
+                class="  hidden md:flex header-more absolute bg-secondary  flex-row items-center py-1 px-2 right-0 top-0 rounded-s-md">
+                <img class="mr-2" src="image/icon/icons8-location-50.png" width="20px" height="20px" alt="">
+                <span class="text-white text-sm">86 đường Tiền Lân 7, ấp Tiền Lân, Bà Điểm, Hóc Môn,
+                    Tp.HCM</span>
+            </div>
+        </div>
+        <!-- End Header -->
+        <!-- Start Slider -->
+        <div id="default-carousel" class="relative w-full slider" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="image/carousel/z3250003882916_44077dd422f5f9aeba222b3d4f606569.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="image/carousel/noi-dung-vay-ca-korea - Copy 1.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="image/carousel/luoi-cat-omega-do-da-nang-noi-dung-e7f0d4ce-464e-4630-a0e6-5c7bfb68deda.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                    data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+        <!-- End Header -->
+        <!-- Start Product -->
+        <div class="store mt-10 container mx-auto flex flex-wrap justify-center">
+            <a href="#"
+                class=" m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/luoidanang001.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lưỡi đa năng 001
+                    </h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">110mm: 75.000/cái</p>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">125mm: 95.000/cái</p>
+                    <p class="mb-3 font-medium text-primary ">200 cái tặng 15 cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class=" m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/vaycakoreandragon.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vảy cá Korea Dragon
+                    </h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">7.500/cái ( 1 thùng 200c )</p>
+                    <p class="mb-3 font-medium text-primary ">SL 1T chiết khấu 7%</p>
+                    <p class="mb-3 font-medium text-primary ">SL 2T-4T chiết khấu 13%</p>
+                    <p class="mb-3 font-medium text-primary ">SL trên 5T chiết khấu 20%</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/chongthamda.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Chống thấm 1L: 784.000/thùng</p>
+                    <p class="mb-3 font-medium text-primary ">3 thùng tặng 1 thùng</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Chống thấm 5L: 880.000/thùng</p>
+                    <p class="mb-3 font-medium text-primary ">4 thùng tặng 1 thùng</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/pacsat.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Pát sắt 2F,2.5F,3F
+                        1.800/1c</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Pát sắt 4F
+                        1.900/1c</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Pát sắt móc
+                        2.000/1c</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Pát inox 2F,2.5F,3F
+                        2.700/1c</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Pát inox 4F
+                        2.900/1c</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Pát móc inox
+                        3.000/1c</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/chendo.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Chén đỏ liền 001
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        54.000/1cái</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/chenxanhrang.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Chén xanh răng
+                        90-001
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        65.000/1cái</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/chenxanhrang100.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Chén xanh răng
+                        100-001
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        65.000/1cái</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/chendo100.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Chén đỏ răng
+                        100-001
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        65.000/1cái</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/luoiranonlientrangvang.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lưỡi rà non liền
+                        trắng, vàng
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        45.000/1cái</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/luoiranonrangtrangvang.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lưỡi rà non răng
+                        trắng, vàng
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        45.000/1cái</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/chenranonrangtrangvang.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Chén rà non răng
+                        trắng, vàng
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        50.000/1cái</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/chenranonrangtrangvang.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Chén rà non liền
+                        trắng, vàng
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        45.000/1cái</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/keodragon.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Keo Dragon
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        Giá liên hệ</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/keoab.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Keo AB
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        Giá liên hệ</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/vaycadailoan.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vảy cá đài loan
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        2.800.000/Thùng</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/laso.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lá số
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        230.000/Hộp</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/nhamxepTC.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Nhám xếp TC (vàng)
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        3.600/cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        1 thùng 300 cái</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/nhamxepEP.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Nhám xếp EP (xanh)
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        4.600/cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        1 thùng 300 cái</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/luoicatgach.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lưỡi cắt gạch
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        110mm: 55.000/cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        125mm: 75.000/cái</p>
+                    <p class="mb-3 font-medium text-primary ">Số lượng >200 chiết khấu 10%</p>
+
+
+                </div>
+            </a>
+
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/sapdanhbongda.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Sáp đánh bóng đá
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        1.050.000/Thùng</p>
+
+
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/luoicatgranite.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lưỡi cắt đá granite
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        300mm: 400.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        350mm: 420.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        400mm: 520.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        500mm: 900.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        600mm: 1.200.000/Cái</p>
+
+
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/luoicat.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <table class="border border-black">
+                        <tr class="border border-black p-1">
+                            <th class="border border-black p-1">Lưỡi cắt</th>
+                            <th class="border border-black p-1">0-100c </th>
+                            <th class="border border-black p-1">100-499c</th>
+                            <th class="border border-black p-1">500-1000c</th>
+                        </tr>
+                        <tr class="border border-black p-1">
+                            <td class="border border-black p-1">114mm </td>
+                            <td class="border border-black p-1">57.000</td>
+                            <td class="border border-black p-1">55.000</td>
+                            <td class="border border-black p-1">53.000</td>
+                        </tr>
+                        <tr class="border border-black p-1">
+                            <td class="border border-black p-1">125mm </td>
+                            <td class="border border-black p-1">69.000</td>
+                            <td class="border border-black p-1">67.000</td>
+                            <td class="border border-black p-1">64.000</td>
+                        </tr>
+                        <tr class="border border-black p-1">
+                            <td class="border border-black p-1">150mm </td>
+                            <td class="border border-black p-1">90.000</td>
+                            <td class="border border-black p-1">88.000</td>
+                            <td class="border border-black p-1">84.000</td>
+                        </tr>
+                        <tr class="border border-black p-1">
+                            <td class="border border-black p-1">180mm </td>
+                            <td class="border border-black p-1">119.000</td>
+                            <td class="border border-black p-1">115.000</td>
+                            <td class="border border-black p-1">110.000</td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/luoicatgo.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lưỡi cắt gỗ
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        1T: 32.000/Cái (30 răng)</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">1T8: 74.000/Cái (40 răng)</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">2T3: 110.000/Cái (40 răng)</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">2T5: 150.000/Cái (40 răng)</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">2T5 : 255.000/Cái (120 răng)</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">3T : 210.000/Cái(40 răng)</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">3T : 320.000/Cái (120 răng)</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">3T5: 305.000/Cái (40 răng)</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">3T5 : 355.000/Cái (60 răng)</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">4T: 365.000/Cái (40 răng)</p>
+
+
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/luoicatnhom120rang.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lưỡi cắt nhôm 120
+                        răng
+
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">250mm: 235.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">300mm : 300.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">350mm : 400.000/Cái</p>
+
+
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/luoicatsathopkim185.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lưỡi cắt sắt hợp
+                        kim 185mm
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Giá : 200.000/Cái </p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/denhuamong1Tcot1T.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Đế nhựa mỏng
+                        1Tcốt1T
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">
+                        6.000/C </p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/denhuaguday.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Đế nhựa gù dày 1T cốt 1T : 3.500/Cái
+                    </p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Đế nhựa gù dày 1T cốt 1T2 : 3.800/Cái
+                    </p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Đế nhựa gù dày 1T2 cốt 1T : 6.300/Cái
+                    </p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Đế nhựa gù dày 1T2 cốt 1T2 : 6.500/Cái
+                    </p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/nixamnido.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Nỉ xám: 6.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Nỉ đỏ: 6.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Nỉ trắng cứng:6.500/Cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/denhuabangday.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Đế nhựa bằng dày 1T cốt 1T : 3.800/Cái
+                    </p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Đế nhựa bằng dày 1T cốt 1T2 : 4.100/Cái
+                    </p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Đế nhựa bằng dày 1T2 cốt 1T : 6.900/Cái
+                    </p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Đế nhựa bằng dày 1T2 cốt 1T2 :
+                        7.100/Cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/nitrangmem.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Nỉ trắng mềm
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">Giá : 7.000/Cái
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/luoicatsat.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lưỡi cắt sắt
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">1T: 2.800/cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">1T2: 6.500/cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">1T5: 7.200/cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">3T: 25.500/cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">3T5: 27.500/cái</p>
+                    <p class="mb-3 font-medium text-primary ">SL >5T (Chiết khấu 10%)</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/damaisat.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Đá mài sắt
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">1T: 5.500/cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">1T2: 10.500/cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">1T5: 12.500/cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">1T8: 17.200/cái</p>
+                    <p class="mb-3 font-medium text-primary ">SL >5T (Chiết khấu 10%)</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/khogas701.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Khò gas 701-K001
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">35.000/cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/khogas990.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Khò gas 990-K002
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">85.000/cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/khogas920.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Khò gas 920-K003
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">32.000/cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/khogasM60.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Khò gas M60-K004
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">52.000/cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/khogas915.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Khò gas 915-K005
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">32.000/cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/khogas807.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Khò gas 807-K006
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">35.000/cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/khogas507.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Khò gas 507-K007
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">85.000/cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/banchaidanhri.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bàn chải đánh rỉ
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">5.000/cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/banhdanhri.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bánh đánh rỉ 200mm
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">50.000/cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/chendanhri.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Chén đánh rỉ 75mm
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">6.200/cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/daubantole.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Đầu bắn Tole
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">30.000/10 cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/daubanvit.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Đầu bắn Vít
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">30.000/10 cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/muikhoanlucgiac.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Mũi khoan lục giác
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">14x280mm: 41.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">16x280mm: 43.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">18x280mm : 48.500/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">20x280mm: 55.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">22x280mm : 60.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">12x220mm : 35.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">14x220 mm : 37.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">16x220mm: 40.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">18x220mm : 45.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">20x220mm: 50.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">22x600mm : 130.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">22x800mm :165.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">25x600mm :147.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">25x800mm :187.000/Cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/muikhoangai.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Mũi khoan gài
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 6x160mm(-): 11.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 8x160mm(-): 13.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 10x160mm(-): 15.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 12x160mm(-): 17.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 14x160mm(-): 19.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 16x160mm(-): 21.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 18x160mm(-): 29.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 16x210mm(-): 25.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 18x210mm(-): 34.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 16x310mm(-): 32.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 18xx310mm(-):39.000/Cái</p>
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/muikhoangainho.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Mũi khoan gài
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 4x110mm(-): 8.500/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 6x110mm(-): 8.500/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 8x110mm(-) : 9.500/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 10x110mm(-): 10.500/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400"> 12x110mm(-) : 12.000/Cái</p>
+
+                </div>
+            </a>
+            <a href="#"
+                class="m-2 flex sm:w-1/2 w-full  flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover w-full rounded-t-lg h-52 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src="./image/product/muikhoansat.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Mũi khoan sắt
+                    </h5>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">2.0mm: 2.150/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">2.5mm : 2.650/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">3.0mm : 3.750/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">3.2mm : 4.500/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">3.5mm : 4.700/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">4.2mm : 6.500/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">4.5mm : 7.500/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">6.0mm : 12.500/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">8.0mm : 25.000/Cái</p>
+                    <p class="mb-3 font-medium text-gray-700 dark:text-gray-400">10mm: 41.000/Cái</p>
+
+                </div>
+            </a>
+
+        </div>
+        <!-- End Product -->
+
+        <div class="achieve"></div>
+        <div class="footer mt-5 container-fluid flex lg:justify-around justify-start items-center p-8 flex-wrap ">
+            <div class="text-white ">
+                <h5 class="font-bold uppercase underline">Thông tin liên hệ</h5>
+                <p class="font-bold text-2xl my-3">CÔNG TY TNHH SX - TM - DV THANH VÂN LONG</p>
+                <p class="flex justify-start items-center my-2"><img class="mr-2"
+                        src="image/icon/icons8-location-50.png" width="20px" height="20px" alt="">
+                    <span class="text-white text-sm ">86 đường Tiền Lân 7, ấp Tiền Lân, Bà Điểm, Hóc Môn,
+                        Tp.HCM</span>
+                </p>
+                <p class="flex justify-start items-center my-2"><img class="mr-2" src="image/icon/icons8-phone-50.png"
+                        width="20px" height="20px" alt=""><span class="text-white text-sm">0989 969 520 - 0974 655
+                        724</span></p>
+
+            </div>
+            <div class="text-white  ">
+                <h5 class="font-bold uppercase underline">Ngân hàng</h5>
+                <div class="my-3">
+                    <p>Ngân hàng Á Châu (ACB)- chi nhánh Nguyễn Thị Tú</p>
+                    <p>Tên tài khoản: <span class="font-semibold">Cao Thị Thanh Thuý</span></p>
+                    <p>Số tài khoản: <span class="font-semibold">16057917</span></p>
+                </div>
+                <div class="my-3">
+                    <p>Ngân hàng Sacombank (ACB)- chi nhánh Q12-PGD Vĩnh Lộc</p>
+                    <p>Tên tài khoản:<span class="font-semibold">Cao Thị Thanh Thuý</span></p>
+                    <p>Số tài khoản: <span class="font-semibold">060259063585</span></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
